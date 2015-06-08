@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/style_tv_nanodegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dim_text_nanodegree_margin"
+        android:text="@string/str_my_nanodegree_apps" />
+
+    <Button
+        style="@style/style_button_text"
+        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_height="@dimen/dim_button_app_height"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dim_button_app_margin"
+        android:background="@drawable/ripple_button_apps"
+        android:onClick="onClickListenerSpotifyStreamer"
+        android:text="@string/str_spotify_streamer" />
+
+    <Button
+        style="@style/style_button_text"
+        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_height="@dimen/dim_button_app_height"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="@dimen/dim_button_app_margin"
+        android:background="@drawable/ripple_button_apps"
+        android:text="@string/str_scores_app"
+        android:onClick="onClickListenerScoresApp"/>
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/style_button_text"
+        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_height="@dimen/dim_button_app_height"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="@dimen/dim_button_app_margin"
+        android:background="@drawable/ripple_button_apps"
+        android:text="@string/str_library_app"
+        android:onClick="onClickListenerLibraryApp"/>
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/style_button_text"
+        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_height="@dimen/dim_button_app_height"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dim_button_app_margin"
+        android:background="@drawable/ripple_button_apps"
+        android:text="@string/str_build_it_bigger"
+        android:onClick="onClickListenerBuildItBigger"/>
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/style_button_text"
+        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_height="@dimen/dim_button_app_height"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="@dimen/dim_button_app_margin"
+        android:background="@drawable/ripple_button_apps"
+        android:text="@string/str_xyz_reader"
+        android:onClick="onClickListenerXYZReader"/>
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/style_button_text"
+        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_height="@dimen/dim_button_app_height"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="@dimen/dim_button_app_margin"
+        android:background="@drawable/ripple_button_my_apps"
+        android:text="@string/str_capstone"
+        android:onClick="onClickListenerCapStone"/>
+
+</LinearLayout>
