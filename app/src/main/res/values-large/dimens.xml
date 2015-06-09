@@ -2,16 +2,16 @@
 <resources>
 
     <!-- MainActivity Dimen Resources -->
-    <dimen name="dim_button_app_height">55dp</dimen>
-    <dimen name="dim_button_app_width">255dp</dimen>
+    <dimen name="dim_button_app_height">105dp</dimen>
+    <dimen name="dim_button_app_width">365dp</dimen>
     <dimen name="dim_button_app_margin">6dp</dimen>
     <dimen name="dim_text_nanodegree_margin">40dp</dimen>
     <!-- MainActivity Dimen Resources -->
 
     <!-- Row Spotify Streamer Item Dimen Resources-->
-    <dimen name="dim_image_view_height">96dp</dimen>
-    <dimen name="dim_image_view_width">96dp</dimen>
-    <dimen name="dim_image_view_margin">20dp</dimen>
+    <dimen name="dim_image_view_height">156dp</dimen>
+    <dimen name="dim_image_view_width">156dp</dimen>
+    <dimen name="dim_image_view_margin">40dp</dimen>
     <!-- Row Spotify Streamer Item Dimen Resources-->
 
 </resources>

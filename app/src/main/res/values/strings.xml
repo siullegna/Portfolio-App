@@ -1,6 +1,7 @@
 <resources>
 
     <string name="app_name">My App Portfolio</string>
+    <string name="app_name_spotify">Spotify Streamer</string>
 
     <string name="action_settings">Settings</string>
 
@@ -22,4 +23,15 @@
     <string name="str_toast_capstone">This button will launch my CapStone App</string>
     <!-- MainActivity String Resources -->
 
+    <!-- Spotify Streamer String Resources -->
+    <string name="action_search">Search</string>
+    <string name="str_hint_action_search">Search, default Artist: Nach</string>
+    <string name="str_nach">Nach</string>
+    <string name="str_no_artist_information">There is no information about</string>
+    <!-- Spotify Streamer String Resources -->
+
+    <!-- Row Spotify Streamer Item String Resources -->
+    <string name="str_artist">Artist</string>
+    <string name="str_album">Album</string>
+    <!-- Row Spotify Streamer Item String Resources -->
 </resources>

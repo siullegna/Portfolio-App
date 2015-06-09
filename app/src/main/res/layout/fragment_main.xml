@@ -15,7 +15,7 @@
 
     <Button
         style="@style/style_button_text"
-        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_width="@dimen/dim_button_app_width"
         android:layout_height="@dimen/dim_button_app_height"
         android:layout_gravity="center"
         android:layout_margin="@dimen/dim_button_app_margin"
@@ -25,7 +25,7 @@
 
     <Button
         style="@style/style_button_text"
-        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_width="@dimen/dim_button_app_width"
         android:layout_height="@dimen/dim_button_app_height"
         android:layout_gravity="center_horizontal|top"
         android:layout_margin="@dimen/dim_button_app_margin"
@@ -34,9 +34,8 @@
         android:onClick="onClickListenerScoresApp"/>
 
     <Button
-        android:id="@+id/button3"
         style="@style/style_button_text"
-        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_width="@dimen/dim_button_app_width"
         android:layout_height="@dimen/dim_button_app_height"
         android:layout_gravity="center_horizontal|top"
         android:layout_margin="@dimen/dim_button_app_margin"
@@ -45,9 +44,8 @@
         android:onClick="onClickListenerLibraryApp"/>
 
     <Button
-        android:id="@+id/button4"
         style="@style/style_button_text"
-        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_width="@dimen/dim_button_app_width"
         android:layout_height="@dimen/dim_button_app_height"
         android:layout_gravity="center"
         android:layout_margin="@dimen/dim_button_app_margin"
@@ -56,9 +54,8 @@
         android:onClick="onClickListenerBuildItBigger"/>
 
     <Button
-        android:id="@+id/button5"
         style="@style/style_button_text"
-        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_width="@dimen/dim_button_app_width"
         android:layout_height="@dimen/dim_button_app_height"
         android:layout_gravity="center_horizontal|bottom"
         android:layout_margin="@dimen/dim_button_app_margin"
@@ -67,9 +64,8 @@
         android:onClick="onClickListenerXYZReader"/>
 
     <Button
-        android:id="@+id/button6"
         style="@style/style_button_text"
-        android:layout_width="@dimen/dim_button_app_weight"
+        android:layout_width="@dimen/dim_button_app_width"
         android:layout_height="@dimen/dim_button_app_height"
         android:layout_gravity="center_horizontal|bottom"
         android:layout_margin="@dimen/dim_button_app_margin"

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <dimen name="dim_button_app_height">55dp</dimen>
-    <dimen name="dim_button_app_weight">255dp</dimen>
-    <dimen name="dim_button_app_margin">6dp</dimen>
-    <dimen name="dim_text_nanodegree_margin">40dp</dimen>
-
-</resources>

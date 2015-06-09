@@ -1,5 +1,6 @@
 <resources>
 
+    <!-- MainActivity Styles -->
     <style name="style_tv_nanodegree">
         <item name="android:textColor">@color/color_black</item>
         <item name="android:textSize">22sp</item>
@@ -11,5 +12,17 @@
         <item name="android:textSize">20sp</item>
         <item name="android:typeface">monospace</item>
     </style>
+    <!-- MainActivity Styles -->
+
+    <!-- SpotifyStreamer Styles -->
+    <style name="style_tv_artist">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+    <style name="style_tv_album">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_grey_700</item>
+    </style>
+    <!-- SpotifyStreamer Styles -->
 
 </resources>
