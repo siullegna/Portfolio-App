@@ -2,25 +2,8 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/color_blue_500</item>
-        <item name="colorPrimaryDark">@color/color_blue_700</item>
-        <item name="colorAccent">@color/color_grey_700</item>
-        <item name="android:textColorPrimary">@color/color_white</item>
-        <item name="android:textColorSecondary">@color/color_white</item>
-        <item name="icon">@color/color_white</item>
-        <item name="divider">@color/color_black</item>
+    <style name="AppTheme" parent="AppTheme.Base">
         <item name="selectableItemBackground">@drawable/selector_action_buttons</item>
-        <!-- PopupMenuTextColor Properties -->
-        <item name="android:textColor">@color/color_black</item>
-        <!-- StatusBar Properties -->
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@color/color_blue_700</item>
-        <!-- enable window content transitions -->
-        <item name="android:windowContentTransitions">true</item>
-        <!-- enable overlap of transitions -->
-        <item name="android:windowAllowEnterTransitionOverlap">true</item>
-        <item name="android:windowAllowReturnTransitionOverlap">true</item>
     </style>
 
 </resources>

@@ -57,7 +57,6 @@ public class SpotifyStreamer extends AppCompatActivity implements CallBackSpotif
         }
 
         init();
-
         handleIntent(getIntent());
     }
 
@@ -66,14 +65,16 @@ public class SpotifyStreamer extends AppCompatActivity implements CallBackSpotif
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_spotify_streamer, menu);
         this.menu = menu;
-        SearchManager searchManager =
-                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+
+
         MenuItem itemSearch = menu.findItem(R.id.action_search);
-        SearchView searchView =
-                (SearchView) MenuItemCompat.getActionView(itemSearch);
-        searchView.setSearchableInfo(
-                searchManager.getSearchableInfo(getComponentName()));
-        searchView.setOnQueryTextListener(this);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(itemSearch);
+        if (searchView != null) {
+            SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+            searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+            searchView.setOnQueryTextListener(this);
+
+        }
         return true;
     }
 

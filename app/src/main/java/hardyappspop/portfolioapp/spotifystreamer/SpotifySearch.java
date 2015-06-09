@@ -1,24 +1,26 @@
 package hardyappspop.portfolioapp.spotifystreamer;
 
+import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.widget.Toast;
 
 import hardyappspop.portfolioapp.R;
 
 /**
  * Created by luisangelgarcia on 6/9/15.
  */
-public class SpotifySplash extends AppCompatActivity {
+public class SpotifySearch extends AppCompatActivity {
     // ===========================================================
     // Constants
     // ===========================================================
-    private final int SPLASH_DISPLAY_LENGTH = 3000;
+
     // ===========================================================
     // Fields
     // ===========================================================
-
+    private Toolbar toolbar;
     // ===========================================================
     // Constructors
     // ===========================================================
@@ -34,30 +36,34 @@ public class SpotifySplash extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash_spotify_streamer);
+
+        setContentView(R.layout.toolbar);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        init();
+
+        handleIntent(getIntent());
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        startAction();
+    protected void onNewIntent(Intent intent) {
+        handleIntent(intent);
     }
+
     // ===========================================================
     // Methods
     // ===========================================================
-    private void startAction() {
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                start();
-            }
-        }, SPLASH_DISPLAY_LENGTH);
+    private void init() {
+
     }
 
-    private void start() {
-        Intent mainIntent = new Intent(this, SpotifyStreamer.class);
-        startActivity(mainIntent);
-        finish();
+    private void handleIntent(Intent intent) {
+        if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
+            String query = intent.getStringExtra(SearchManager.QUERY);
+            Toast.makeText(this, query, Toast.LENGTH_SHORT).show();
+        }
     }
     // ===========================================================
     // Inner and Anonymous Classes
